@@ -1,0 +1,8 @@
+{
+    "name": "Projeto PNC",
+    "short_name": "PNC",
+    "start_url": "/projeto_PNC/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#6200ea"
+}
