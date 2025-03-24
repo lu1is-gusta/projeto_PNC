@@ -1,8 +1,8 @@
 {
     "name": "Projeto PNC",
     "short_name": "PNC",
-    "start_url": "/projeto_PNC/index.html",
-    "display": "standalone",
+    "start_url": ".",
+    "display": "minimal-ui",
     "background_color": "#b623db",
     "theme_color": "#6200ea"
 }
