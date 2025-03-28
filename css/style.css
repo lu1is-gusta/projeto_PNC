@@ -5,6 +5,7 @@ body{
 
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center; 
     align-items: center;  
     height: 100vh;  
@@ -14,3 +15,96 @@ body{
 .card{
     text-align: center;
 }
+
+.btn {
+    background-color: #D81B60; 
+    color: #FFFFFF; 
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 25px; 
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background-color: #B0003A; 
+    transform: scale(1.05); 
+}
+
+.btn:active {
+    background-color: #8E0030; 
+    transform: scale(0.98);
+}
+
+.btnLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D81B60;
+    color: #FFFFFF; 
+    width: 60px; 
+    height: 60px; 
+    border-radius: 50%; 
+    text-decoration: none; 
+    font-size: 24px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btnLink:hover {
+    background-color: #B0003A;
+    transform: scale(1.1); 
+}
+
+.btnLink:active {
+    background-color: #8E0030; 
+    transform: scale(0.95); 
+}
+
+.img {
+    display: block;
+    margin: -20px auto 10px; 
+    width: 150px; 
+}
+
+.spanImg{
+    display: flex;
+    gap: 10px; 
+    justify-content: center; 
+    align-items: center;
+}
+  
+
+/* Animações */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.img, .btn, .btnLink {
+    opacity: 0; 
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.img {
+    animation-delay: 1s;
+}
+
+.btn {
+    animation-delay: 1.5s; 
+}
+
+.btnLink {
+    animation-delay: 1.5s; 
+}
+  
